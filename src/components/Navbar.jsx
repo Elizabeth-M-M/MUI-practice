@@ -85,30 +85,30 @@ const columns = [
   },
 ];
 
-// const rows = [
-//   { id: 1, lastName: "Snow", firstName: "Jon", age: 14 },
-//   { id: 2, lastName: "Lannister", firstName: "Cersei", age: 31 },
-//   { id: 3, lastName: "Lannister", firstName: "Jaime", age: 31 },
-//   { id: 4, lastName: "Stark", firstName: "Arya", age: 11 },
-//   { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: null },
-//   { id: 6, lastName: "Melisandre", firstName: null, age: 150 },
-//   { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44 },
-//   { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
-//   { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
-// ];
+const rows = [
+  { id: 1, lastName: "Snow", firstName: "Jon", age: 14 },
+  { id: 2, lastName: "Lannister", firstName: "Cersei", age: 31 },
+  { id: 3, lastName: "Lannister", firstName: "Jaime", age: 31 },
+  { id: 4, lastName: "Stark", firstName: "Arya", age: 11 },
+  { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: null },
+  { id: 6, lastName: "Melisandre", firstName: null, age: 150 },
+  { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44 },
+  { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
+  { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
+];
 
 // not data grid
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
 }
 
-const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Gingerbread", 356, 16.0, 49, 3.9),
-];
+// const rows = [
+//   createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
+//   createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
+//   createData("Eclair", 262, 16.0, 24, 6.0),
+//   createData("Cupcake", 305, 3.7, 67, 4.3),
+//   createData("Gingerbread", 356, 16.0, 49, 3.9),
+// ];
 
 const styles = {
   textField: {
@@ -139,7 +139,7 @@ export default function PermanentDrawerLeft() {
       <Navbar />
       <Box component="main" sx={{ flexGrow: 1, pl: 3 }}>
         {/* datagrid*/}
-        {/* <Box
+        <Box
           sx={{ height: 400, width: "calc(100vw - 312px)" }}
         >
           <DataGrid
@@ -156,9 +156,9 @@ export default function PermanentDrawerLeft() {
             checkboxSelection
             disableRowSelectionOnClick
           />
-        </Box> */}
+        </Box>
 
-        <Box sx={{ height: 400, width: "calc(100vw - 312px)" }}>
+        {/* <Box sx={{ height: 400, width: "calc(100vw - 312px)" }}>
           <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
@@ -188,7 +188,7 @@ export default function PermanentDrawerLeft() {
               </TableBody>
             </Table>
           </TableContainer>
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );
